@@ -1,0 +1,179 @@
+<!-- Maninder Kaur 8918916 -->
+<!-- This is the document type declaration -->
+<!DOCTYPE html>
+<!-- This is the html element (root element)-->
+<html lang="en">
+<head>
+    <!-- Define character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define keywords and description for SEO -->
+    <meta name="keywords" content="Punjabi music,Shubhdeep Singh Sidhu,Singer,Songwriter,Actor,Punjab,Musical artist,Controversies">
+    <meta name="description" content="This site is about the life of legend Sidhu Moosewala">
+    <!-- This is a link to external stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- this is a page title -->   
+    <title>
+        Sidhu Moose wala
+    </title>
+</head>
+<body>
+    <!-- This is the header section -->
+    <header>
+        <!-- This is the main heading -->
+        <h1>Sidhu Moose wala</h1>
+    </header>
+    <nav>
+        <ul> 
+            <li id="home-link">  <a href="index.html">Home</a></li>
+            <li id="contact-link"> <a href="contact.html">Contact</a></:</li>
+
+        </ul>
+    </nav>
+    <!-- This is a main content section -->
+    <main>
+        <h2>Contact</h2>
+        <form name="contact_form" id="contact_form" method="post" action="contact.php" autocomplete="on">
+            <div>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>    
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" autofocus required> 
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <fieldset id="gender_fieldset">
+                        <legend>What is the gender?</legend>       
+                        <lable for="male">Male</lable>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <lable for="female">Female</lable>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <lable for="other">Other</lable>
+                        <input type="radio" name="gender" id="other" value="other">
+                    </fieldset>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="website">What is your website?</label>
+                        <input type="url" name="website" id="website" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="pone" id="phone" placeholder="555-555-5555">
+                    </div>
+                    <div>
+                        <label for="dob">What is your date of birth?</label>
+                        <input type="date" id="dob" name="dob" min="1981-01-01" max="2024-01-01"> 
+                    </div>
+                    <div>
+                        <label for="color">What is your favorite color?</label>
+                        <input type="color" id="color" name="color">
+                    </div>
+                    <div>
+                        <label for="html">On a scale of 1 to 10,how much do you like HTML?</label>
+                        <input type="range" name="html" id="html" min="1" max="10" step="1" value="10">
+                    </div>
+                </fieldset>
+            </div> 
+                 <input type="hidden" name="userid" value="abc"> 
+                 
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" maxlength="12" required>
+            </div>
+            
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="message" id="message" rows="10" cols="30" required></textarea>
+            </div>
+            
+            <div>
+                <lable for="document">Documents</lable>
+                <input type="file" name="document" id="document" multiple>
+            </div>
+            <div>
+                <label for="availibity">What is your availibity?</label>
+                <select id="availibity" name="availibity" multiple size="2">
+                    <option value="">Select</option>
+                    <option value="1" selected>Full-Time</option>
+                    <option value="2">Part-Time</option>
+                    <option value="3">Both</option>
+                </select>    
+            </div>
+            <div>
+                <label for="state_province">What is your State/Province?</label>
+                <select id="state_province" name="state_province">
+                    <optgroup label="States">
+                        <option value="1">UKK</option>
+                        <option value="2">India</option>
+                        <option value="3">USA</option>
+                        <option value="4">Canada</option>
+                    </optgroup>
+                    <optgroup label="Provinces">
+                        <option value="53">Alberta</option>
+                        <option value="54">British Columbia</option>
+                        <option value="55">Manitoba</option>
+                        <option value="56">Ontario</option>
+                    </optgroup>
+                    
+                </select>    
+                    
+            </div>
+            <div>
+                <lable for="robot">I am not the robot</lable>
+                <input type="checkbox" name="robot" id="robot" value="True">
+                <input type="reset" name="clear" id="clear" value="Clear Form">
+                <input type="submit" name="submit" id="submit" value="Submit Form">
+                <button type="reset">My button</button>
+                <button type="submit">My button</button>
+            </div>
+
+        </form>
+
+    </main>
+    <aside>
+        <h3>External Links</h3>
+
+        <br> <a href="https://en.wikipedia.org/wiki/Sidhu_Moose_Wala" target="_blank">Wikipedia</a>
+            <br> <a href="https://www.instagram.com/sidhu_moosewala/" target="_blank">Instagram</a>
+
+            <h3>FAQs</h3>
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <td>What was Sidhu Moose Wala known for?</td>
+                    <td>Sidhu Moose Wala was known for his contributions to Punjabi music and cinema.</td>
+                </tr>
+                <tr>
+                    <td>Where was Sidhu Moose Wala born?</td>
+                    <td>Sidhu Moose Wala was born in the village of Moosa, Mansa, Punjab, India.</td>
+                </tr> 
+            </table>
+
+    </aside>
+    <!-- This is a footer section -->
+
+    <footer>
+        <!-- This is a copyright information -->
+        <p>&copy; Maninder Kaur 2024</p>
+
+    </footer>
+    
+     
+
+    
+</body>
+</html>

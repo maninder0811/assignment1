@@ -1,23 +1,38 @@
 /*Maninder Kaur 8918916*/
 /*html element selector root element*/
 html {
-    font: 20px Arial, sans-serif; /* Shorthand for font properties */
+    font: normal normal normal 20px/1.5 sans-serif;
 }
 
-h1, h2 {
-    font-variant: small-caps;
+/* Reduce the font size for the header */
+header h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
+}
+/* Reduce the font size for the blockquote */
+blockquote p {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+}
+
+/* Reduce the font size for the figcaption */
+figcaption {
+    font-size: 1rem; /* Adjust the font size as needed */
+}
+
+/* Reduce the font size for the biography content */
+#bio p {
+    font-size: 1rem; /* Adjust the font size as needed */
 }
 
 figcaption {
     font-weight: bold;
     font-variant: small-caps;
-    font-size: 1.2rem; /* Relative font size */
+    font-size: 1.25rem; 
 }
 
 q {
     font-style: italic;
     font-family: cursive;
-    font-size: 1.2rem; /* Relative font size */
+    font-size: 1.5rem; /* Relative font size */
 }
 
 footer p {
@@ -26,61 +41,60 @@ footer p {
 
 /* Height, Width & Max Width */
 body {
-    width: 80%; /* Set width relative to parent */
+    width: 100%; /* Set width relative to parent */
     max-width: 1200px; /* Set max-width absolutely */
-}
-
-/* Box Model & Alignment */
-body {
-    padding: 20px; /* Padding on all sides */
-    margin: 0 auto; /* Center align */
+    margin: auto;
+    padding: 0.25rem;
+    background-color: aliceblue;
 }
 
 header, footer {
-    text-align: center; /* Center align text */
+
+    border: 0.25rem solid orange;
+    text-align: center; 
 }
 
 .main-section {
     text-align: center; /* Center align text */
-    padding: 20px; /* Padding on all sides */
+    padding: 5rem 1rem ;
 }
 
-#bio {
-    text-align: left; /* Align text to the left */
-}
 
 .main-section-figure img{
-    height : 40%;
-    width : 40%;
+    height : 90%;
+    width : 90%;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
     
 }
+.main-section-figure{
+    padding: 0.25rem;
 
-
-.main-section-figure img {
-    border: 2px solid blue; /* Blue border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px; /* Add padding for better spacing */
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    border-radius: 1.5rem;
+    margin: 0.5rem auto ;
 }
 
 
-#quote q {
-    border: 1px solid #f00; /* Red border */
+
+main{
+    width : 70%;
+    float : left;
+}
+aside{
+    width: 25%;
+    float: right;
+}
+
+footer{
+    clear: both;
+}
+#quote{
+    clear :both;
+    border: 0.25rem solid #f00; /* Red border */
     box-shadow: 5px 5px 5px #888; /* Box shadow */
+    padding: 1rem;
+    width: 95%;
+
 }
 
 /* Colour */
@@ -112,9 +126,80 @@ header, footer {
 }
 
 #absolute-path-image {
-    background-color: hsla(240, 100%, 75%, 0.3); /* Light blue background */
+    border: 0.25rem solid hsla(38, 100%, 15%,1);
+    background-color: hsla(38, 100%, 80%, 0.9); /* Light blue background */
 }
 
+nav{
+    background-color: orange;
+    padding: 0 1rem 2rem 1rem;
+    margin : 1rem;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+}
+
+nav > ul > li > a{
+    color: orangered;
+    font-size: 1.25rem;
+    background-color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    border : 0.1rem solid orangered ;
+
+}
+nav > ul > li > a:hover{
+    color: white;
+    background-color: orangered;
+    border : 0.1rem solid white;
+
+    
+}
+#home-link{
+    float :left;
+    width : 50%;
+}
+#contact-link{
+    float :right;
+    width : 50%;
+}
+#bio {
+    text-align: left; /* Align text to the left */
+    width : 43%;
+    float : left;
+}
 #relative-path-image {
-    background-color: hsla(120, 100%, 75%, 0.3); /* Light green background */
+    border: 0.25rem solid green;
+    background-color: hsla(120, 50%, 80%, 0.7); /* Light green background */
+    width : 44%;
+    float : right;
+
+}
+#q{
+    clear: both;
+}
+table, th, td{
+    border : 1rem solid hsla(120, 100%, 75%, 0.3);
+}
+#gender_fieldset{
+    border : none;
+    padding : 0;
+}
+/*
+input[type=radio]{
+    width : 700px;
+}
+/*
+input[type=email], input[type=text], select, textarea{
+    width : 50%;
+}
+label{
+    font-variant: small-caps;
+    color : green;
+    font-weight: bold;
+    font-size: 1rem;
 }
